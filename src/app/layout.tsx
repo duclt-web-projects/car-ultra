@@ -1,4 +1,6 @@
 import '@/assets/styles/app.scss';
+import TheFooter from '@/components/TheFooter';
+import TheHeader from '@/components/TheHeader';
 import type { Metadata } from 'next';
 import { UIProviders } from './ui-providers';
 
@@ -15,7 +17,11 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body>
-        <UIProviders>{children}</UIProviders>
+        <UIProviders>
+          <TheHeader />
+          {children}
+          <TheFooter />
+        </UIProviders>
       </body>
     </html>
   );

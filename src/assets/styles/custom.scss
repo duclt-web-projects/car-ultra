@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1536px;
+  max-width: 1440px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -22,6 +22,7 @@
 
 .cu-select__control {
   border: 1px solid #eeeeee;
+  background-color: #f2f2f2;
 
   &:hover {
     border-color: #eeeeee;
@@ -42,19 +43,24 @@
 }
 
 .cu-select__value-container {
-  height: 38px;
+  height: 46px;
   border: none;
 }
 
 .cu-select__option--is-selected {
-  background-color: red;
+  font-weight: 700;
 }
 
-.cu-select__option--is-focused {
-  background-color: blue;
+.cu-select__indicator-separator {
+  display: none;
 }
 
-.test {
-  display: flex;
-  gap: 8px;
+.cu-select__indicator svg {
+  transition: 0.3s ease-in-out;
+}
+
+.cu-select__control--menu-is-open {
+  .cu-select__indicator svg {
+    transform: rotate(-180deg);
+  }
 }
