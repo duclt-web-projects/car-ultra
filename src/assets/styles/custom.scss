@@ -64,3 +64,22 @@
     transform: rotate(-180deg);
   }
 }
+
+.heading-2 {
+  position: relative;
+  font-size: 24px;
+  line-height: 32px;
+  display: block;
+  font-weight: 500;
+
+  &::after {
+    position: absolute;
+    background-color: var(--cu-primary-1-color);
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 42px;
+    margin-bottom: 1.25rem;
+  }
+}
