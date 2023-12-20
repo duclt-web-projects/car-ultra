@@ -1,0 +1,25 @@
+.featured {
+  margin-bottom: 24px;
+  .swiper-wrapper {
+    padding: 16px 0;
+  }
+
+  .chakra-tabs__tab-panel {
+    position: relative;
+  }
+
+  .slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  .slide-btn-prev {
+    left: -16px;
+  }
+
+  .slide-btn-next {
+    right: -16px;
+  }
+}

@@ -1,6 +1,6 @@
 'use client';
 
-import { IconNext, IconPrev } from '@/assets/icons';
+import { IconAngleLeft, IconAngleRight } from '@/assets/icons';
 import Image from 'next/image';
 import { useCallback, useRef } from 'react';
 import 'swiper/css';
@@ -26,10 +26,10 @@ const Banner = () => {
   return (
     <div className='banner'>
       <button className='banner__btn banner__btn-prev' onClick={handlePrev}>
-        <IconPrev />
+        <IconAngleLeft />
       </button>
       <button className='banner__btn banner__btn-next' onClick={handleNext}>
-        <IconNext />
+        <IconAngleRight />
       </button>
       <Swiper
         ref={swiperRef}

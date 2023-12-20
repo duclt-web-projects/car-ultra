@@ -1,0 +1,26 @@
+.news-list {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    .slide-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      z-index: 100;
+    }
+
+    .slide-btn-prev {
+      left: -16px;
+    }
+
+    .slide-btn-next {
+      right: -16px;
+    }
+  }
+}

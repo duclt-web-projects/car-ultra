@@ -8,7 +8,7 @@ const AllBrands = () => {
     <div className='all-brands'>
       <div className='all-brands__title'>
         <h2 className='heading-2'>All Brands</h2>
-        <Link href='/'>
+        <Link href='/' className='view-more'>
           View more <IconArrowRight />
         </Link>
       </div>
@@ -17,7 +17,7 @@ const AllBrands = () => {
           .fill('1')
           .map((e, i) => (
             <Link href='/' className='brand' key={i}>
-              <Image src='/images/kia.jpg' width={40} height={40} alt='oto' />
+              <Image src='/images/kia.jpg' width={200} height={200} alt='oto' />
               <span>Suzuki</span>
             </Link>
           ))}
