@@ -11,39 +11,57 @@
 
 .cu-input {
   height: 40px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #e0e0e0;
   padding: 0 16px;
   border-radius: 4px;
+  color: var(--cu-title-color);
+  transition: 0.2s ease-in-out;
 
   &:focus {
-    border-color: var(--cu-primary-1-color);
+    border-color: var(--cu-border-focus-color);
+    background-color: #fff;
+  }
+
+  &::placeholder {
+    color: #999;
   }
 }
 
 .cu-select__control {
-  border: 1px solid #eeeeee;
-  background-color: #f2f2f2;
+  border: 1px solid  var(--cu-border-color);
+  background-color: #ffffff;
+  transition: 0.2s ease-in-out;
 
   &:hover {
-    border-color: #eeeeee;
+    border-color: var(--cu-border-focus-color);
   }
 
   &:focus {
-    border-color: var(--cu-primary-1-color);
+    border-color: var(--cu-border-focus-color);
+    background-color: #fff;
   }
 }
 
+.cu-select__placeholder {
+  color: #999;
+}
+
 .cu-select__control--is-focused {
-  border-color: var(--cu-primary-1-color);
   box-shadow: none;
 
   &:hover {
-    border-color: var(--cu-primary-1-color);
+    border-color: var(--cu-border-focus-color);
+    background-color: #fff;
   }
+}
+
+.cu-select__single-value {
+  color: var(--cu-title-color);
 }
 
 .cu-select__value-container {
   height: 46px;
+  border-width: 1px;
   border: none;
 }
 

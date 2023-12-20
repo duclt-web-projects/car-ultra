@@ -12,8 +12,12 @@ import IconHeartFull from './IconHeartFull';
 import IconHome from './IconHome';
 import IconInstagram from './IconInstagram';
 import IconLinkIn from './IconLinkIn';
+import IconLogin from './IconLogin';
+import IconMail from './IconMail';
 import IconNext from './IconNext';
+import IconPhone from './IconPhone';
 import IconPrev from './IconPrev';
+import IconResister from './IconResister';
 import IconSearch from './IconSearch';
 import IconSeat from './IconSeat';
 import IconTransmission from './IconTransmission';
@@ -35,8 +39,12 @@ export {
   IconHome,
   IconInstagram,
   IconLinkIn,
+  IconLogin,
+  IconMail,
   IconNext,
+  IconPhone,
   IconPrev,
+  IconResister,
   IconSearch,
   IconSeat,
   IconTransmission,

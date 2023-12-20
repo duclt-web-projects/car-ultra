@@ -1,6 +1,6 @@
 'use client';
 
-import { IconBars, IconHeart } from '@/assets/icons';
+import { IconBars, IconHeart, IconSearch } from '@/assets/icons';
 import {
   Accordion,
   AccordionButton,
@@ -12,6 +12,7 @@ import {
   DrawerCloseButton,
   DrawerContent,
   DrawerOverlay,
+  Input,
   useDisclosure,
 } from '@chakra-ui/react';
 import Image from 'next/image';
@@ -19,30 +20,36 @@ import Link from 'next/link';
 
 const HeaderMb = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const {
+    isOpen: isOpenSearch,
+    onOpen: onOpenSearch,
+    onClose: onCloseSearch,
+  } = useDisclosure();
 
   return (
     <div className='header-mb'>
-      <div className='container'>
-        <div className='top-bar'>
-          <div className='top-bar__logo'>
-            <Link href='/'>
-              <Image
-                src='/images/logo.svg'
-                alt=''
-                width={160}
-                height={34}
-                priority={true}
-              />
-            </Link>
+      <div className='container header-mb__wrapper'>
+        <div className='header-mb__logo'>
+          <Link href='/'>
+            <Image
+              src='/images/logo.png'
+              alt=''
+              width={180}
+              height={45}
+              priority={true}
+            />
+          </Link>
+        </div>
+        <div className='header-mb__right'>
+          <button className='search' onClick={onOpenSearch}>
+            <IconSearch />
+          </button>
+          <div className='favorite'>
+            <IconHeart />
           </div>
-          <div className='top-bar__right'>
-            <div className='favorite'>
-              <IconHeart />
-            </div>
-            <button className='open-menu' onClick={onOpen}>
-              <IconBars />
-            </button>
-          </div>
+          <button className='open-menu' onClick={onOpen}>
+            <IconBars />
+          </button>
         </div>
       </div>
       <Drawer isOpen={isOpen} placement='right' onClose={onClose}>
@@ -50,14 +57,6 @@ const HeaderMb = () => {
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerBody>
-            <div className='header-mb__auth'>
-              <Link href='/' className='btn btn-login'>
-                Đăng nhập
-              </Link>
-              <Link href='/' className='btn btn-register'>
-                Đăng ký
-              </Link>
-            </div>
             <div className='header-mb__menu'>
               <Accordion allowToggle>
                 <AccordionItem>
@@ -93,6 +92,28 @@ const HeaderMb = () => {
                   </AccordionPanel>
                 </AccordionItem>
               </Accordion>
+            </div>
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
+      <Drawer
+        placement='top'
+        isOpen={isOpenSearch}
+        onClose={onCloseSearch}
+        size='full'
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerCloseButton />
+          <DrawerBody>
+            <div className='container'>
+              <div className='header-mb__search'>
+                <Input placeholder='Search car, post' focusBorderColor='#ccc' />
+                <button className='cu-btn-search'>
+                  <IconSearch />
+                  Tìm kiếm
+                </button>
+              </div>
             </div>
           </DrawerBody>
         </DrawerContent>

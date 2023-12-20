@@ -1,4 +1,5 @@
 import Banner from './components/Banner';
+import QuickTabs from './components/QuickTabs';
 import Searchbox from './components/SearchBox';
 import QuickFilter from './components/QuickFilter';
 import AllBrands from './components/AllBrands';
@@ -10,8 +11,8 @@ export default function Home() {
   return (
     <main>
       <Banner />
+      <Searchbox />
       <div className='container'>
-        <Searchbox />
         <AllBrands />
         <FeaturedCars />
         <QuickFilter />

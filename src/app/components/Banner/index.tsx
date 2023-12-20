@@ -1,6 +1,6 @@
 'use client';
 
-import { IconAngleLeft, IconAngleRight } from '@/assets/icons';
+import { IconAngleLeft, IconAngleRight, IconAngleLeft, IconAngleRight } from '@/assets/icons';
 import Image from 'next/image';
 import { useCallback, useRef } from 'react';
 import 'swiper/css';
@@ -40,7 +40,7 @@ const Banner = () => {
       >
         <SwiperSlide>
           <Image
-            src='/images/banner/banner-1.jpg'
+            src='/images/banner/banner-5.jpg'
             alt='banner-1'
             width={1000}
             height={1000}

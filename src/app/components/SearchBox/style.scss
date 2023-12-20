@@ -1,50 +1,84 @@
 .search-box {
-  margin-top: -70px;
   margin-bottom: 40px;
-  padding: 24px;
   background-color: #fff;
-  // background-image: url('../../../../public/images/bg-search-box.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
   position: relative;
   z-index: 1;
-  border-radius: 8px;
   border: 1px solid #e5e5e5;
-  box-shadow: 0px 4px 10px rgba(182, 182, 182, 0.18);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.07);
+
+  .chakra-tabs {
+    margin-top: -46px;
+
+    &__tablist {
+      border-bottom: none;
+    }
+
+    &__tab {
+      background-color: rgba(255, 255, 255, 0.7);
+      margin-right: 8px;
+      border-radius: 4px 4px 0 0;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 12px 48px;
+      color: #444;
+
+      &[aria-selected='true'] {
+        background-color: #fff;
+        font-weight: 700;
+        color: #222;
+      }
+    }
+
+    &__tab-panel {
+      padding: 32px 16px 24px;
+    }
+  }
 
   .form {
     display: flex;
     align-items: flex-end;
     gap: 16px;
 
+    &__input {
+      flex: 1;
+
+      input {
+        width: 100%;
+        height: 48px;
+      }
+    }
+
     &__select {
-      width: 27%;
+      flex: 1;
     }
 
     &__btn {
-      width: 19%;
+      display: flex;
+      gap: 8px;
 
-      button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .clear {
+        min-width: 48px;
         height: 48px;
-        width: 100%;
-        background-color: var(--cu-primary-color);
-        color: #fff;
         border-radius: 4px;
-        transition: 0.2s ease-in-out;
+        border: 1px solid var(--cu-border-color);
 
         svg {
-          fill: #fff;
-          margin-right: 8px;
+          color: #444;
         }
 
         &:hover {
-          background-color: #238854;
+          background-color: #f2f2f2;
         }
       }
+
+      .cu-btn-search {
+        padding: 0 40px;
+      }
+    }
+
+    .cu-select__control {
+      height: 48px;
     }
   }
 
@@ -68,18 +102,29 @@
       white-space: nowrap;
 
       &:hover {
-        background-color: #e5e5e5;
+        background-color: #e0e0e0;
       }
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .search-box {
     .form {
       flex-wrap: wrap;
       > div {
         width: 100%;
+        flex: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-box {
+    .chakra-tabs {
+      &__tab {
+        padding: 12px 16px;
       }
     }
   }
