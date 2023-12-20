@@ -51,7 +51,7 @@
       gap: 16px;
       margin-top: 16px;
 
-      a {
+      .view {
         flex: 1;
         border: 1px solid var(--cu-primary-color);
         text-align: center;
@@ -63,7 +63,7 @@
         font-size: 14px;
       }
 
-      button {
+      .save {
         width: 40px;
         height: 40px;
         display: flex;
@@ -74,7 +74,7 @@
         transition: 0.2s ease-in-out;
 
         svg {
-            fill: #444;
+          fill: #444;
         }
 
         &:hover {
@@ -83,8 +83,101 @@
       }
     }
   }
+}
 
+.car-card--view-grid {
   &:hover {
     transform: translateY(-12px);
+    box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.car-card--view-list {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+
+  .car-card__img {
+    width: 250px;
+  }
+
+  .car-card__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      position: absolute;
+      top: 12px;
+      right: 0;
+      height: 48px;
+      width: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        position: relative;
+        color: #fff;
+        z-index: 100;
+        font-size: 20px;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 120%;
+        height: 100%;
+        transform: skewX(-30deg);
+        background-color: var(--cu-primary-color);
+      }
+    }
+  }
+
+  .information {
+    display: flex;
+
+    .info {
+      padding: 0 32px;
+      border-left: 1px solid var(--cu-border-color);
+
+      &__title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+
+        svg {
+          fill: #666;
+        }
+      }
+
+      &__content {
+        font-weight: 700;
+        text-align: center;
+      }
+
+      &:first-child {
+        border-left: none;
+      }
+    }
+  }
+
+  .actions {
+    flex: 1;
+    justify-content: space-between;
+    align-items: end;
+
+    .view {
+      flex: unset;
+      padding: 0 40px;
+    }
   }
 }

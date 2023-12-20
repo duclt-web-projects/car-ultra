@@ -24,7 +24,7 @@ const FeaturedCars = () => {
 
   return (
     <div className='featured'>
-      <h2 className='heading-2'>Featured Cars</h2>
+      <h2 className='heading'>Featured Cars</h2>
       <Tabs position='relative' variant='unstyled'>
         <TabList>
           <Tab>Trending</Tab>

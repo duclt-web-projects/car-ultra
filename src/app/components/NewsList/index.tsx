@@ -17,7 +17,7 @@ const NewsList = () => {
   return (
     <div className='news-list'>
       <div className='news-list__title'>
-        <h2 className='heading-2'>News</h2>
+        <h2 className='heading'>News</h2>
         <Link href='/' className='view-more'>
           View more <IconArrowRight />
         </Link>

@@ -10,18 +10,14 @@ import {
 const QuickFilter = () => {
   return (
     <div className='quick-filter'>
-      <h2 className='heading-2'>Find The Cars Of Your Choice</h2>
+      <h2 className='heading'>Find The Cars Of Your Choice</h2>
       <Tabs position='relative' variant='unstyled'>
         <TabList>
           <Tab>Brand</Tab>
           <Tab>Body type</Tab>
           <Tab>Three</Tab>
         </TabList>
-        <TabIndicator
-          mt='-1.5px'
-          height='4px'
-          bg='blue.500'
-        />
+        <TabIndicator mt='-1.5px' height='4px' bg='blue.500' />
         <TabPanels>
           <TabPanel>
             <p>one!</p>

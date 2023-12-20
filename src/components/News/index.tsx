@@ -2,16 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import './style.scss';
 
-const News = ({ title }: {title: string}) => {
+const News = ({ title }: { title: string }) => {
   return (
     <Link href='/' className='news'>
       <div className='news__img'>
         <Image src='/images/news.jpg' alt='news' width={200} height={200} />
       </div>
       <div className='news__body'>
-        <h3 className='news__title'>
-          {title}
-        </h3>
+        <h3 className='news__title'>{title}</h3>
         <div className='news__category'>Thông tin xe</div>
         <div className='news__description'>
           Sau thời gian dài chờ đợi, chiếc Mercedes-AMG GT thế hệ thứ 2 cũng

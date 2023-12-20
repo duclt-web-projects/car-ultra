@@ -1,0 +1,43 @@
+.breadcrumb {
+  background-color: #f2f2f2;
+  padding: 8px 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  svg {
+    fill: #666;
+  }
+
+  &__home {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--cu-border-color);
+    }
+  }
+
+  &__delimiter svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  a {
+    color: #444;
+    font-size: 14px;
+
+    &:hover {
+      color: var(--cu-primary-1-color);
+    }
+  }
+}

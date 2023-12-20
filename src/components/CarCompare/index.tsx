@@ -15,7 +15,7 @@ const CarCompare = () => {
   return (
     <div className='car-compare'>
       <div className='car-compare__title'>
-        <h2 className='heading-2'>Compare Cars</h2>
+        <h2 className='heading'>Compare Cars</h2>
         <div className='slide-btn-wrapper'>
           <button className='slide-btn slide-btn-prev' onClick={handlePrev}>
             <IconAngleLeft />
