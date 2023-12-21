@@ -4,12 +4,14 @@ import './style.scss';
 
 const News = ({ title }: { title: string }) => {
   return (
-    <Link href='/' className='news'>
-      <div className='news__img'>
+    <div className='news'>
+      <Link href='/' className='news__img'>
         <Image src='/images/news.jpg' alt='news' width={200} height={200} />
-      </div>
+      </Link>
       <div className='news__body'>
-        <h3 className='news__title'>{title}</h3>
+        <h3 className='news__title'>
+          <Link href='/'>{title}</Link>
+        </h3>
         <div className='news__category'>Thông tin xe</div>
         <div className='news__description'>
           Sau thời gian dài chờ đợi, chiếc Mercedes-AMG GT thế hệ thứ 2 cũng
@@ -34,7 +36,7 @@ const News = ({ title }: { title: string }) => {
           <span className='news__date'>12/12/2023</span>
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 

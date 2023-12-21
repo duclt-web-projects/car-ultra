@@ -13,11 +13,13 @@ const QuickFilter = () => {
       <h2 className='heading'>Find The Cars Of Your Choice</h2>
       <Tabs position='relative' variant='unstyled'>
         <TabList>
-          <Tab>Brand</Tab>
-          <Tab>Body type</Tab>
-          <Tab>Three</Tab>
+          <div className='tabs__wrapper'>
+            <Tab>Brand</Tab>
+            <Tab>Body type</Tab>
+            <Tab>Three</Tab>
+            <TabIndicator mt='-1.5px' height='4px' bg='#34a46a' />
+          </div>
         </TabList>
-        <TabIndicator mt='-1.5px' height='4px' bg='blue.500' />
         <TabPanels>
           <TabPanel>
             <p>one!</p>

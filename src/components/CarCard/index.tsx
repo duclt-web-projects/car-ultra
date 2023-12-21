@@ -10,18 +10,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import './style.scss';
 
-const CarCardViewList = () => {
+const CarCard = ({ type = 'grid' }: { type?: string }) => {
   return (
-    <Link href='/' className='car-card car-card--view-list'>
-      <div className='car-card__img'>
+    <div className={`car-card car-card--view-${type}`}>
+      <Link href='/' className='car-card__img'>
         <Image src='/images/car.jpg' alt='car' fill />
-      </div>
+        <button className='save'>
+          <IconHeart />
+        </button>
+      </Link>
       <div className='car-card__body'>
-        <p className='name'>Volvo</p>
-        <p className='price'>
-          <span>500 trieu</span>
-        </p>
-        <div className='information'>
+        <p className='brand'>Toyota</p>
+        <Link href='/' className='name'>
+          Volvo
+        </Link>
+        <p className='price'><span>500 trieu</span></p>
+        <div className='car-card__info'>
           <div className='info'>
             <p className='info__title'>
               <IconEngine /> Động cơ
@@ -53,40 +57,9 @@ const CarCardViewList = () => {
             <p className='info__content'>2023</p>
           </div>
         </div>
-        <div className='actions'>
-          <button className='view'>Xem xe</button>
-          <button className='save'>
-            <IconHeart />
-          </button>
-        </div>
-      </div>
-    </Link>
-  );
-};
-
-const CarCardViewGrid = () => {
-  return (
-    <div className='car-card car-card--view-grid'>
-      <div className='car-card__img'>
-        <Image src='/images/car.jpg' alt='car' fill />
-      </div>
-      <div className='car-card__body'>
-        <p className='brand'>Toyota</p>
-        <p className='name'>Volvo</p>
-        <p className='price'>500 trieu</p>
-        <div className='actions'>
-          <button className='view'>Xem xe</button>
-          <button className='save'>
-            <IconHeart />
-          </button>
-        </div>
       </div>
     </div>
   );
-};
-
-const CarCard = ({ type = 'grid' }: { type: string }) => {
-  return type === 'grid' ? <CarCardViewGrid /> : <CarCardViewList />;
 };
 
 export default CarCard;

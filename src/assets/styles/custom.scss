@@ -85,6 +85,25 @@
   }
 }
 
+.tabs__wrapper {
+  position: relative;
+  display: flex;
+
+  .chakra-tabs__tab {
+    padding: 0;
+    margin-right: 32px;
+
+    &[aria-selected='true'] {
+      font-weight: 500;
+      color: var(--cu-primary-color);
+    }
+  }
+
+  .chakra-tabs__tab-indicator {
+    bottom: -4px;
+  }
+}
+
 .chakra-tabs {
   &__tab-panel {
     padding: 0;

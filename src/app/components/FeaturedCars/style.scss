@@ -1,25 +1,18 @@
 .featured {
   margin-bottom: 24px;
   .swiper-wrapper {
-    padding: 16px 0;
+    padding: 16px 8px;
   }
 
   .chakra-tabs__tab-panel {
     position: relative;
   }
 
-  .slide-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-  }
-
-  .slide-btn-prev {
-    left: -16px;
-  }
-
-  .slide-btn-next {
-    right: -16px;
+  .slide-btn__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex: 1;
   }
 }

@@ -27,24 +27,28 @@ const FeaturedCars = () => {
       <h2 className='heading'>Featured Cars</h2>
       <Tabs position='relative' variant='unstyled'>
         <TabList>
-          <Tab>Trending</Tab>
-          <Tab>Popular</Tab>
-          <Tab>Upcoming</Tab>
-        </TabList>
-        <TabIndicator
-          mt='-1.5px'
-          height='2px'
-          bg='blue.500'
-          borderRadius='1px'
-        />
-        <TabPanels>
-          <TabPanel>
+          <div className='tabs__wrapper'>
+            <Tab p={0}>Trending</Tab>
+            <Tab>Popular</Tab>
+            <Tab>Upcoming</Tab>
+            <TabIndicator
+              mt='-1.5px'
+              height='3px'
+              bg='#34a46a'
+              borderRadius='1px'
+            />
+          </div>
+          <div className='slide-btn__wrapper'>
             <button className='slide-btn slide-btn-prev' onClick={handlePrev}>
               <IconAngleLeft />
             </button>
             <button className='slide-btn slide-btn-next' onClick={handleNext}>
               <IconAngleRight />
             </button>
+          </div>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
             <Swiper
               spaceBetween={20}
               slidesPerView={4}
