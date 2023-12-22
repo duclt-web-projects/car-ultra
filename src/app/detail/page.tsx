@@ -1,21 +1,19 @@
 import Breadcrumb from '@/components/Breadcrumb';
-import CarCard from '@/components/CarCard';
-import Pagination from '@/components/Pagination';
 import Sidebar from '@/components/Sidebar';
+import BoxContact from './components/BoxContact';
 import './style.scss';
+import CarImage from './components/CarImage';
 
-const Listing = () => {
+const Detail = () => {
   return (
     <>
       <Breadcrumb />
       <div className='container cu-wrapper'>
         <div className='cu-wrapper__content'>
-          <h1 className='heading'>Danh Sách Xe Ô tô Tại Việt Nam</h1>
-          <CarCard type='list' />
-          <CarCard />
-          <Pagination />
+          <CarImage />
         </div>
         <div className='cu-wrapper__sidebar'>
+          <BoxContact />
           <Sidebar />
         </div>
       </div>
@@ -23,4 +21,4 @@ const Listing = () => {
   );
 };
 
-export default Listing;
+export default Detail;

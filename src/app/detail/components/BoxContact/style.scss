@@ -1,0 +1,51 @@
+.box-contact {
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--cu-border-color);
+  border-radius: 4px;
+  text-align: center;
+
+  a {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  h3 {
+    margin: 12px 0;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  button {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+  }
+
+  &__register {
+    border: 1px solid var(--cu-primary-color);
+    background-color: var(--cu-primary-color);
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: 500;
+
+    &:hover {
+      background-color: var(--cu-primary-1-color);
+    }
+  }
+
+  &__drive {
+    border: 1px solid var(--cu-title-color);
+  }
+}
