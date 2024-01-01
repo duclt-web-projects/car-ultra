@@ -1,22 +1,20 @@
 import Breadcrumb from '@/components/Breadcrumb';
-import Sidebar from '@/components/Sidebar';
-import BoxContact from './components/BoxContact';
-import './style.scss';
+import CarDetail from './components/CarDetail';
 import CarImage from './components/CarImage';
+import CarInfo from './components/CarInfo';
+import './style.scss';
 
 const Detail = () => {
   return (
     <>
       <Breadcrumb />
-      <div className='container cu-wrapper'>
-        <div className='cu-wrapper__content'>
+      <section className='main-content'>
+        <div className='container'>
           <CarImage />
+          <CarInfo />
         </div>
-        <div className='cu-wrapper__sidebar'>
-          <BoxContact />
-          <Sidebar />
-        </div>
-      </div>
+      </section>
+      <CarDetail />
     </>
   );
 };

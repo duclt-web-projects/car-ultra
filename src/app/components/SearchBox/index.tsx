@@ -26,15 +26,19 @@ const Searchbox = () => {
             <TabPanel>
               <div className='search-bosx'>
                 <div className='form'>
-                  <div className="form__input">
-                    <input type="text" className='cu-input' placeholder='Keyword'/>
+                  <div className='form__input'>
+                    <input
+                      type='text'
+                      className='cu-input'
+                      placeholder='Keyword'
+                    />
                   </div>
                   <div className='form__select'>
                     <Select
                       instanceId='brand'
                       options={options}
                       classNamePrefix='cu-select'
-                      placeholder="Select brand"
+                      placeholder='Select brand'
                       theme={(theme) => ({
                         ...theme,
                         colors: {
@@ -51,7 +55,7 @@ const Searchbox = () => {
                       instanceId='model'
                       options={options}
                       classNamePrefix='cu-select'
-                      placeholder="Select model"
+                      placeholder='Select model'
                       theme={(theme) => ({
                         ...theme,
                         colors: {
@@ -68,7 +72,7 @@ const Searchbox = () => {
                       instanceId='price'
                       options={options}
                       classNamePrefix='cu-select'
-                      placeholder="Price"
+                      placeholder='Price'
                       theme={(theme) => ({
                         ...theme,
                         colors: {
@@ -82,10 +86,10 @@ const Searchbox = () => {
                   </div>
                   <div className='form__btn'>
                     <button className='cu-btn-search'>
-                      <IconSearch /> Tìm xe
+                      <i className='fa-solid fa-magnifying-glass'></i> Tìm xe
                     </button>
                     <button className='clear'>
-                      <RepeatIcon />
+                      <i className='fa-solid fa-arrows-rotate'></i>
                     </button>
                   </div>
                 </div>

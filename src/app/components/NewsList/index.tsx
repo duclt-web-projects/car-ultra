@@ -1,6 +1,5 @@
 'use client';
 
-import { IconAngleLeft, IconAngleRight } from '@/assets/icons';
 import IconArrowRight from '@/assets/icons/IconArrowRight';
 import News from '@/components/News';
 import { useSwiperControl } from '@/hooks';
@@ -19,15 +18,15 @@ const NewsList = () => {
       <div className='news-list__title'>
         <h2 className='heading'>News</h2>
         <Link href='/' className='view-more'>
-          View more <IconArrowRight />
+          View more <i className='fa-solid fa-arrow-right'></i>
         </Link>
       </div>
       <div className='news-list__wrapper'>
         <button className='slide-btn slide-btn-prev' onClick={handlePrev}>
-          <IconAngleLeft />
+          <i className='fa-solid fa-angle-left'></i>
         </button>
         <button className='slide-btn slide-btn-next' onClick={handleNext}>
-          <IconAngleRight />
+          <i className='fa-solid fa-angle-right'></i>
         </button>
         <Swiper
           spaceBetween={20}

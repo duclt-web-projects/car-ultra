@@ -1,20 +1,21 @@
 'use client';
 
-import { IconAngleLeft, IconAngleRight } from '@/assets/icons';
 import FancyBox from '@/components/FancyBox';
 import { useSwiperControl } from '@/hooks';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import type { Swiper as SwiperType } from 'swiper';
+import { FreeMode, Thumbs } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/thumbs';
-import { FreeMode, Thumbs } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import './style.scss';
 
 const CarImage = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const { swiperRef, handlePrev, handleNext } = useSwiperControl();
 
   return (
@@ -27,10 +28,10 @@ const CarImage = () => {
         }}
       >
         <button className='slide-btn slide-btn-prev' onClick={handlePrev}>
-          <IconAngleLeft />
+          <i className='fa-solid fa-angle-left'></i>
         </button>
         <button className='slide-btn slide-btn-next' onClick={handleNext}>
-          <IconAngleRight />
+          <i className='fa-solid fa-angle-right'></i>
         </button>
         <Swiper
           spaceBetween={10}

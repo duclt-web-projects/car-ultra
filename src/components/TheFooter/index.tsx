@@ -1,10 +1,3 @@
-import {
-  IconFacebook,
-  IconInstagram,
-  IconLinkIn,
-  IconTwitter,
-  IconYoutube,
-} from '@/assets/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import './style.scss';
@@ -14,7 +7,7 @@ const TheFooter = () => {
     <footer>
       <div className='container footer'>
         <div className='footer__overview'>
-          <Image src='/images/logo.svg' alt='logo' width={100} height={100} />
+          <Image src='/images/logo.png' alt='logo' width={100} height={100} />
           <p>
             Autofun.vn là trang web ô tô tổng hợp cung cấp tin tức, đánh giá về
             ô tô với các công cụ giúp bạn so sánh các mẫu xe khác nhau. Tất cả
@@ -122,19 +115,19 @@ const TheFooter = () => {
             <span>Follow us:</span>
             <div className='social__list'>
               <Link href='/' className='social__item'>
-                <IconFacebook />
+                <i className='fa-brands fa-facebook-f'></i>
               </Link>
               <Link href='/' className='social__item'>
-                <IconYoutube />
+                <i className='fa-brands fa-youtube'></i>
               </Link>
               <Link href='/' className='social__item'>
-                <IconTwitter />
+                <i className='fa-brands fa-twitter'></i>
               </Link>
               <Link href='/' className='social__item'>
-                <IconInstagram />
+                <i className='fa-brands fa-instagram'></i>
               </Link>
               <Link href='/' className='social__item'>
-                <IconLinkIn />
+                <i className='fa-brands fa-linkedin-in'></i>
               </Link>
             </div>
           </div>

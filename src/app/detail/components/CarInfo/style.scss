@@ -1,0 +1,142 @@
+.car-info {
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    margin: 12px 0 16px;
+    gap: 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--cu-border-color);
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    .rating-point {
+      font-weight: 500;
+    }
+
+    .rating-evaluate {
+      color: #666;
+    }
+  }
+
+  &__price {
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--cu-primary-color);
+  }
+
+  &__estimate {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    a {
+      position: relative;
+      width: 50%;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #46936a;
+      background-color: #f4f7f5;
+      border-radius: 8px;
+    }
+
+    .estimate__title {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .estimate__value {
+      font-weight: 700;
+    }
+
+    .estimate__icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 16px;
+
+      i {
+        font-size: 12px;
+        color: #666;
+      }
+    }
+  }
+
+  &__report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin-bottom: 16px;
+    background-color: var(--cu-secondary-color);
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--cu-secondary-1-color);
+    }
+  }
+
+  &__specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    .specs {
+      width: calc(50% - 12px);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background-color: #f5f5f7;
+      border-radius: 8px;
+
+      &__icon {
+        i {
+          font-size: 20px;
+          color: #999;
+        }
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__value {
+        font-weight: 700;
+      }
+
+      &__label {
+        font-size: 12px;
+        color: #666;
+      }
+    }
+  }
+
+  &__view-detail {
+    margin-top: 12px;
+    color: var(--cu-secondary-color);
+
+    &:hover {
+      color: var(--cu-secondary-1-color);
+    }
+  }
+}

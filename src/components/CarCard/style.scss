@@ -3,6 +3,7 @@
   border-radius: 4px;
   background-color: #fff;
   transition: 0.2s ease-in-out;
+  display: block;
 
   &__img {
     position: relative;
@@ -31,10 +32,9 @@
     transition: 0.2s ease-in-out;
     background-color: #fff;
 
-    svg {
-      fill: #444;
-      width: 14px;
-      height: 14px;
+    i {
+      font-size: 14px;
+      color: #444;
     }
 
     &:hover {
@@ -43,11 +43,13 @@
   }
 
   &__body {
+    padding: 0 16px;
+
     .brand {
       position: relative;
-      padding: 0 24px;
+      padding-left: 8px;
+      margin: 8px 0;
       font-size: 12px;
-      margin-bottom: 8px;
 
       &::before {
         position: absolute;
@@ -58,12 +60,11 @@
         background-color: var(--cu-primary-color);
         top: 50%;
         transform: translateY(-50%);
-        left: 16px;
+        left: 0px;
       }
     }
 
     .name {
-      padding: 0 16px;
       font-size: 18px;
       font-weight: 700;
 
@@ -73,57 +74,67 @@
     }
 
     .price {
-      padding: 0 16px;
       font-size: 20px;
       font-weight: 500;
-      color: var(--cu-secondary-color);
-    }
-
-    .actions {
-      display: flex;
-      gap: 16px;
-      margin-top: 16px;
-
-      .view {
-        flex: 1;
-        border: 1px solid var(--cu-primary-color);
-        text-align: center;
-        height: 40px;
-        line-height: 40px;
-        border-radius: 4px;
-        color: var(--cu-primary-color);
-        font-weight: 500;
-        font-size: 14px;
-      }
+      color: var(--cu-primary-color);
+      margin: 8px 0;
     }
   }
 
   &__info {
     display: flex;
+    gap: 24px;
     border-top: 1px solid var(--cu-border-color);
 
     .info {
-      width: calc(100% / 3);
-      border-right: 1px solid var(--cu-border-color);
+      position: relative;
       display: flex;
-      padding: 12px 16px;
+      padding: 12px 0;
       font-size: 12px;
 
+      i {
+        color: #54595fcf;
+        margin-right: 4px;
+        font-size: 16px;
+      }
+
       svg {
-        fill: #666;
-        margin-right: 8px;
+        fill: #54595fcf;
+        margin-right: 4px;
+      }
+
+      path {
+        fill: #54595fcf;
       }
 
       &__title {
+        color: #54595f;
         white-space: nowrap;
+
+        span {
+          display: none;
+        }
       }
 
       &__content {
+        color: #54595f;
         white-space: nowrap;
       }
 
-      &:last-child {
-        border-right: none;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: rgba(84, 89, 95, 0.7);
+        top: 50%;
+        transform: translateY(-50%);
+        right: -12px;
+      }
+
+      &:last-child::after {
+        display: none;
       }
     }
   }
@@ -195,6 +206,7 @@
   .car-card__info {
     border-top: none;
     margin: 16px 0;
+    gap: 20px;
 
     .info {
       display: flex;
@@ -203,6 +215,10 @@
 
       &__title {
         display: flex;
+
+        span {
+          display: block;
+        }
       }
 
       &__content {
@@ -210,6 +226,13 @@
         font-size: 14px;
         text-align: center;
         margin-top: 4px;
+      }
+
+      &::after {
+        width: 1px;
+        right: -10px;
+        height: 100%;
+        border-radius: 0;
       }
     }
   }

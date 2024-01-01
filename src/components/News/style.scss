@@ -56,7 +56,6 @@
 
     span {
       font-size: 12px;
-      font-weight: 500;
       color: #666;
     }
   }
@@ -64,6 +63,11 @@
   &__author {
     display: flex;
     align-items: center;
+    font-weight: 500;
+
+    span {
+      font-size: 14px;
+    }
 
     img {
       width: 20px;

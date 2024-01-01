@@ -1,7 +1,8 @@
 .featured {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+
   .swiper-wrapper {
-    padding: 16px 8px;
+    padding: 16px 0px;
   }
 
   .chakra-tabs__tab-panel {
@@ -14,5 +15,19 @@
     justify-content: flex-end;
     gap: 8px;
     flex: 1;
+  }
+
+  .car-card {
+    &__info {
+      .info {
+        &:nth-child(n + 4) {
+          display: none;
+        }
+
+        &:nth-child(3)::after {
+          display: none;
+        }
+      }
+    }
   }
 }

@@ -1,11 +1,10 @@
-import Banner from './components/Banner';
-import QuickTabs from './components/QuickTabs';
-import Searchbox from './components/SearchBox';
-import QuickFilter from './components/QuickFilter';
-import AllBrands from './components/AllBrands';
-import FeaturedCars from './components/FeaturedCars';
 import CarCompare from '@/components/CarCompare';
+import AllBrands from './components/AllBrands';
+import Banner from './components/Banner';
+import FeaturedCars from './components/FeaturedCars';
 import NewsList from './components/NewsList';
+import QuickFilter from './components/QuickFilter';
+import Searchbox from './components/SearchBox';
 
 export default function Home() {
   return (

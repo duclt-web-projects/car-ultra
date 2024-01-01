@@ -1,4 +1,3 @@
-import { IconAngleLeft, IconAngleRight } from '@/assets/icons';
 import './style.scss';
 
 const Pagination = () => {
@@ -7,7 +6,7 @@ const Pagination = () => {
       <ul>
         <li className='pagination__item pagination__item--prev'>
           <a href=''>
-            <IconAngleLeft />
+            <i className='fa-solid fa-angle-left'></i>
           </a>
         </li>
         <li className='pagination__item pagination__item--active'>
@@ -27,7 +26,7 @@ const Pagination = () => {
         </li>
         <li className='pagination__item pagination__item--next'>
           <a href=''>
-            <IconAngleRight />
+            <i className='fa-solid fa-angle-right'></i>
           </a>
         </li>
       </ul>

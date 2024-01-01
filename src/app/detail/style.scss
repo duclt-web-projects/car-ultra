@@ -1,0 +1,14 @@
+.main-content {
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .car-image {
+    width: 60%;
+  }
+
+  .car-info {
+    width: 40%;
+  }
+}

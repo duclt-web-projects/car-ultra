@@ -1,6 +1,5 @@
 'use client';
 
-import { IconAngleLeft, IconAngleRight } from '@/assets/icons';
 import { useSwiperControl } from '@/hooks';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -18,16 +17,16 @@ const CarCompare = () => {
         <h2 className='heading'>Compare Cars</h2>
         <div className='slide-btn-wrapper'>
           <button className='slide-btn slide-btn-prev' onClick={handlePrev}>
-            <IconAngleLeft />
+            <i className='fa-solid fa-angle-left'></i>
           </button>
           <button className='slide-btn slide-btn-next' onClick={handleNext}>
-            <IconAngleRight />
+            <i className='fa-solid fa-angle-right'></i>
           </button>
         </div>
       </div>
       <Swiper
         spaceBetween={20}
-        slidesPerView={4}
+        slidesPerView={3}
         ref={swiperRef}
         modules={[Navigation]}
       >

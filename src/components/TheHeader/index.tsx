@@ -1,12 +1,4 @@
-import {
-  IconAngleDown,
-  IconHeart,
-  IconLogin,
-  IconMail,
-  IconPhone,
-  IconResister,
-  IconSearch,
-} from '@/assets/icons';
+import { IconAngleDown, IconHeart, IconSearch } from '@/assets/icons';
 import { Input, Tooltip } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,21 +12,21 @@ const TheHeader = () => {
         <div className='container top-bar__wrapper'>
           <div className='top-bar__item'>
             <a className='top-bar__link'>
-              <IconPhone />
+              <i className='fa-solid fa-phone'></i>
               <span>0849.300.599</span>
             </a>
             <a className='top-bar__link'>
-              <IconMail />
+              <i className='fa-regular fa-envelope'></i>
               <span>duclt3005@gmail.com</span>
             </a>
           </div>
           <div className='top-bar__item'>
             <a className='top-bar__link'>
-              <IconLogin />
+              <i className='fa-solid fa-right-to-bracket'></i>
               <span>Login</span>
             </a>
             <a className='top-bar__link'>
-              <IconResister />
+              <i className='fa-solid fa-lock-open'></i>
               <span>Register</span>
             </a>
           </div>
@@ -56,7 +48,7 @@ const TheHeader = () => {
           <ul className='header__menu'>
             <li>
               <Link href=''>
-                Xe mới <IconAngleDown />
+                Xe mới <i className='fa-solid fa-angle-down'></i>
               </Link>
               <ul className='header__submenu'>
                 <li>Lọc xe</li>
@@ -65,13 +57,13 @@ const TheHeader = () => {
             </li>
             <li>
               <Link href=''>
-                Tin tức <IconAngleDown />
+                Tin tức <i className='fa-solid fa-angle-down'></i>
               </Link>
               <ul className='header__submenu'></ul>
             </li>
             <li>
               <Link href=''>
-                Công cụ <IconAngleDown />
+                Công cụ <i className='fa-solid fa-angle-down'></i>
               </Link>
               <ul className='header__submenu'></ul>
             </li>
@@ -80,7 +72,7 @@ const TheHeader = () => {
             <div className='search'>
               <Input placeholder='Search car, post' focusBorderColor='#ccc' />
               <button>
-                <IconSearch />
+                <i className='fa-solid fa-magnifying-glass'></i>
               </button>
             </div>
             <div className='save'>
@@ -92,7 +84,7 @@ const TheHeader = () => {
                 p='8px'
                 fontSize={12}
               >
-                <IconHeart />
+                <i className='fa-regular fa-heart'></i>
               </Tooltip>
             </div>
           </div>

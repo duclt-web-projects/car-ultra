@@ -1,4 +1,3 @@
-import IconArrowRight from '@/assets/icons/IconArrowRight';
 import Image from 'next/image';
 import Link from 'next/link';
 import './style.scss';
@@ -9,7 +8,7 @@ const AllBrands = () => {
       <div className='all-brands__title'>
         <h2 className='heading'>All Brands</h2>
         <Link href='/' className='view-more'>
-          View more <IconArrowRight />
+          View more <i className='fa-solid fa-arrow-right'></i>
         </Link>
       </div>
       <div className='all-brands__list'>

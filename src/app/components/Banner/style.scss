@@ -17,10 +17,9 @@
     z-index: 10;
     transition: 0.2s ease-in-out;
 
-    svg {
-      fill: #222;
-      width: 20px;
-      height: 20px;
+    i {
+      font-size: 20px;
+      color: #222;
     }
 
     &:hover {
@@ -82,10 +81,9 @@
     z-index: 10;
     transition: 0.2s ease-in-out;
 
-    svg {
-      fill: #222;
-      width: 20px;
-      height: 20px;
+    i {
+      font-size: 20px;
+      color: #222;
     }
 
     &:hover {

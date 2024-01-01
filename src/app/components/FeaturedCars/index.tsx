@@ -14,7 +14,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import './style.scss';
 
 // Import Swiper styles
-import { IconAngleLeft, IconAngleRight } from '@/assets/icons';
 import { useSwiperControl } from '@/hooks';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -28,22 +27,22 @@ const FeaturedCars = () => {
       <Tabs position='relative' variant='unstyled'>
         <TabList>
           <div className='tabs__wrapper'>
-            <Tab p={0}>Trending</Tab>
+            <Tab>Trending</Tab>
             <Tab>Popular</Tab>
             <Tab>Upcoming</Tab>
             <TabIndicator
               mt='-1.5px'
               height='3px'
-              bg='#34a46a'
+              bg='#e52d27'
               borderRadius='1px'
             />
           </div>
           <div className='slide-btn__wrapper'>
             <button className='slide-btn slide-btn-prev' onClick={handlePrev}>
-              <IconAngleLeft />
+              <i className='fa-solid fa-angle-left'></i>
             </button>
             <button className='slide-btn slide-btn-next' onClick={handleNext}>
-              <IconAngleRight />
+              <i className='fa-solid fa-angle-right'></i>
             </button>
           </div>
         </TabList>

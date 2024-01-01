@@ -23,7 +23,7 @@ const QuickTabs = () => {
         <TabIndicator
           mt='-1.5px'
           height='2px'
-          bg='blue.500'
+          bg='#e52d27'
           borderRadius='1px'
         />
         <TabPanels>

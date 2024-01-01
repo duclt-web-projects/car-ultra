@@ -17,12 +17,14 @@ const QuickFilter = () => {
             <Tab>Brand</Tab>
             <Tab>Body type</Tab>
             <Tab>Three</Tab>
-            <TabIndicator mt='-1.5px' height='4px' bg='#34a46a' />
+            <TabIndicator mt='-1.5px' height='3px' bg='#e52d27' />
           </div>
         </TabList>
         <TabPanels>
           <TabPanel>
-            <p>one!</p>
+            <div className='filter'>
+              <div className='filter__item'></div>
+            </div>
           </TabPanel>
           <TabPanel>
             <p>two!</p>

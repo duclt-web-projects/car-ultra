@@ -20,13 +20,15 @@
     padding: 0 12px;
     cursor: pointer;
 
-    svg {
+    i {
       margin-bottom: 2px;
+      color: #fff;
+      font-size: 14px;
+      transition: 0.2s ease-in-out;
     }
 
-    path {
-      fill: #eee;
-      transition: 0.2s ease-in-out;
+    .fa-envelope {
+      font-size: 16px;
     }
 
     span {
@@ -40,8 +42,8 @@
         color: var(--cu-primary-color);
       }
 
-      path {
-        fill: var(--cu-primary-color);
+      i {
+        color: var(--cu-primary-color);
       }
     }
   }
@@ -87,9 +89,8 @@
       font-size: 14px;
       text-transform: uppercase;
 
-      svg {
-        width: 12px;
-        height: 12px;
+      i {
+        font-size: 14px;
       }
     }
   }
@@ -155,8 +156,8 @@
         right: 8px;
         z-index: 10;
 
-        path {
-          fill: #666;
+        i {
+          color: #666;
         }
       }
     }
@@ -171,13 +172,9 @@
       cursor: pointer;
       transition: 0.2s ease-in-out;
 
-      svg {
-        width: 24px;
-        height: 24px;
-
-        path {
-          fill: #666;
-        }
+      i {
+        color: #666;
+        font-size: 24px;
       }
 
       &:hover {
@@ -224,16 +221,14 @@
       display: flex;
       align-items: center;
 
-      svg {
-        width: 24px;
-        height: 24px;
+      i {
+        font-size: 24px;
         margin-left: 16px;
       }
 
       .search {
-        svg {
-          width: 22px;
-          height: 22px;
+        i {
+          font-size: 22px;
         }
       }
     }

@@ -1,4 +1,4 @@
-import { IconAngleRight, IconHome } from '@/assets/icons';
+import { IconHome } from '@/assets/icons';
 import Link from 'next/link';
 import './style.scss';
 
@@ -9,11 +9,11 @@ const Breadcrumb = () => {
         <ul>
           <li>
             <Link href='/' className='breadcrumb__home'>
-              <IconHome />
+              <i className='fa-solid fa-house'></i>
             </Link>
           </li>
           <li className='breadcrumb__delimiter'>
-            <IconAngleRight />
+            <i className='fa-solid fa-angle-right'></i>
           </li>
           <li>
             <Link href='/'>Giá xe</Link>

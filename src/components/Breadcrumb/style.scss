@@ -9,8 +9,8 @@
     gap: 16px;
   }
 
-  svg {
-    fill: #666;
+  i {
+    color: #666;
   }
 
   &__home {
@@ -28,9 +28,8 @@
     }
   }
 
-  &__delimiter svg {
-    width: 12px;
-    height: 12px;
+  &__delimiter i {
+    font-size: 12px;
   }
 
   a {

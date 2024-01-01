@@ -28,7 +28,7 @@
 }
 
 .cu-select__control {
-  border: 1px solid  var(--cu-border-color);
+  border: 1px solid var(--cu-border-color);
   background-color: #ffffff;
   transition: 0.2s ease-in-out;
 
@@ -84,23 +84,11 @@
 }
 
 .heading {
-  position: relative;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 32px;
   display: block;
   font-weight: 500;
-  margin-bottom: 20px;
-
-  &::after {
-    position: absolute;
-    background-color: var(--cu-primary-1-color);
-    border-radius: 4px;
-    content: '';
-    display: block;
-    height: 4px;
-    width: 80px;
-    margin-bottom: 20px;
-  }
+  margin-bottom: 16px;
 }
 
 .tabs__wrapper {
@@ -146,8 +134,8 @@
   border-radius: 4px;
   border: 1px solid var(--cu-border-color);
 
-  svg {
-    fill: #666;
+  i {
+    color: #666;
   }
 
   &:hover {
@@ -163,11 +151,10 @@
   color: var(--cu-primary-color);
   font-weight: 500;
 
-  svg {
-    width: 12px;
-    height: 12px;
+  i {
+    font-size: 14px;
     margin-left: 4px;
-    fill: var(--cu-primary-color);
+    color: var(--cu-primary-color);
   }
 
   &:hover {
@@ -177,6 +164,31 @@
       fill: var(--cu-primary-1-color);
     }
   }
+}
+
+.cu-btn-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  background-color: var(--cu-primary-color);
+  color: #fff;
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+
+  i {
+    color: #fff;
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background-color: var(--cu-primary-1-color);
+  }
+}
+
+.chakra-input {
+  border-radius: 4px;
 }
 
 .cu-wrapper {
@@ -191,4 +203,13 @@
   &__sidebar {
     width: 20%;
   }
+}
+
+.star-ratings {
+  display: flex !important;
+  align-items: center;
+}
+
+.star-container {
+  padding: 0 2px !important;
 }

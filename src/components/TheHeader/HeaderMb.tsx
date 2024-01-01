@@ -1,6 +1,5 @@
 'use client';
 
-import { IconBars, IconHeart, IconSearch } from '@/assets/icons';
 import {
   Accordion,
   AccordionButton,
@@ -42,13 +41,13 @@ const HeaderMb = () => {
         </div>
         <div className='header-mb__right'>
           <button className='search' onClick={onOpenSearch}>
-            <IconSearch />
+            <i className='fa-solid fa-magnifying-glass'></i>
           </button>
           <div className='favorite'>
-            <IconHeart />
+            <i className='fa-regular fa-heart'></i>
           </div>
           <button className='open-menu' onClick={onOpen}>
-            <IconBars />
+            <i className='fa-solid fa-bars'></i>
           </button>
         </div>
       </div>
@@ -110,7 +109,7 @@ const HeaderMb = () => {
               <div className='header-mb__search'>
                 <Input placeholder='Search car, post' focusBorderColor='#ccc' />
                 <button className='cu-btn-search'>
-                  <IconSearch />
+                  <i className='fa-solid fa-magnifying-glass'></i>
                   Tìm kiếm
                 </button>
               </div>
