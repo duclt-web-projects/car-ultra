@@ -1,11 +1,9 @@
 'use client';
 
-import { IconSearch } from '@/assets/icons';
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/react';
 import Link from 'next/link';
 import Select from 'react-select';
 import './style.scss';
-import { RepeatIcon } from '@chakra-ui/icons';
 
 const Searchbox = () => {
   const options = [
