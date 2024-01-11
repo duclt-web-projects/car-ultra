@@ -66,7 +66,11 @@ const EstimateCost = () => {
         <div className='option'>
           <label htmlFor=''>Giá đàm phán (VND)</label>
           <div className='option__item'>
-            <input type='text' className='cu-input price' placeholder='Keyword' />
+            <input
+              type='text'
+              className='cu-input price'
+              placeholder='Keyword'
+            />
           </div>
         </div>
       </div>

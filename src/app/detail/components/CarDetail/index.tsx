@@ -1,7 +1,16 @@
+import EstimateCost from '@/components/EstimateCost';
+import Installment from '@/components/Installment';
 import Sidebar from '@/components/Sidebar';
 import Link from 'next/link';
 import './style.scss';
-import EstimateCost from '@/components/EstimateCost';
+import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Box,
+} from '@chakra-ui/react';
 
 const CarDetail = () => {
   return (
@@ -118,14 +127,52 @@ const CarDetail = () => {
               </p>
             </div>
             <div className='detail__more'>
-              <button
-                className='cu-btn btn-viewmore'
-                title='Xem thêm'
-              >
+              <button className='cu-btn btn-viewmore' title='Xem thêm'>
                 Xem thêm
               </button>
             </div>
             <EstimateCost />
+            <Installment />
+            <div className='detail__qa'>
+              <div className='detail__title'>
+                Các câu hỏi thường gặp khi mua xe Honda Civic
+              </div>
+              <Accordion allowToggle>
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton>
+                      <Box as='span' flex='1' textAlign='left'>
+                        Section 1 title
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pb={4}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </AccordionPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton>
+                      <Box as='span' flex='1' textAlign='left'>
+                        Section 2 title
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pb={4}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </AccordionPanel>
+                </AccordionItem>
+              </Accordion>
+            </div>
           </div>
           <div className='sidebar-wrapper'>
             <Sidebar />

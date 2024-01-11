@@ -213,3 +213,16 @@
 .star-container {
   padding: 0 2px !important;
 }
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 0 -16px;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calc(100% * $i / 12);
+    padding: 0 16px;
+  }
+}
